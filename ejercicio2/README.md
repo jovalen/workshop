@@ -123,3 +123,7 @@ kubectl create secret generic mongosecret \
     --namespace workshopns \
     --from-literal=MONGOCONNECTION="mongodb://<username>:<password>@ratings-mongodb.workshopns:27017/ratingsdb"
 ```
+comprobamos que se ha creado correctamente:
+```
+kubectl describe secret mongosecret --namespace workshopns
+```
