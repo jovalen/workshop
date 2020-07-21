@@ -51,3 +51,7 @@ az aks get-credentials \
     --resource-group aksworkshoprg \
     --name aksworkshop1111
 ```
+## Ahora creamos un Namespace (podemos utilizar el fichero workshopns.yml de este repositorio)
+```
+kubectl apply -f workshopns.yml
+```
