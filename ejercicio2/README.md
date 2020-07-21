@@ -108,7 +108,12 @@ az aks update \
 ### Instalamos el repo de bitnami que ofrece varios charts, entre ellos el de mongo
 ```
 helm repo add bitnami https://charts.bitnami.com/bitnami
-helm search repo bitnami
+helm search repo bitnami | grep mongo
 ```
 >
-###
+### Instalamos el chart
+```
+helm install ratings bitnami/mongodb \ 
+    --namespace workshopns \ 
+    --set auth.username=<username>,auth.password=<password>,auth.database=ratingsdb
+```
