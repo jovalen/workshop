@@ -55,6 +55,9 @@ az aks get-credentials \
 ```
 kubectl apply -f workshopns.yml
 ```
+>
+>
+>
 # Despliegue de una aplicación 
 
 ## El siguiente paso que vamos realizar en este ejercicio del workshop, es el despliegue de una aplicación, utilizando el container registry creado en el ejercicio 1 para realizar el build de las imágenes docker
@@ -96,3 +99,16 @@ az aks update \
     --resource-group aksworkshoprg \
     --attach-acr myacrworkshop001
 ```
+>
+>
+>
+>
+## Ahora vamos a desplegtar una DB mongo utilizando helm como package manager
+>
+### Instalamos el repo de bitnami que ofrece varios charts, entre ellos el de mongo
+```
+helm repo add bitnami https://charts.bitnami.com/bitnami
+helm search repo bitnami
+```
+>
+###
