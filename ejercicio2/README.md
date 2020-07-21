@@ -45,3 +45,9 @@ az aks create \
 --docker-bridge-address 172.17.0.1/16 \
 --generate-ssh-keys
 ```
+### Una vez que el cluster está desplegado, obtenemos los credenciales para poder conectarnos
+```
+az aks get-credentials \
+    --resource-group aksworkshoprg \
+    --name aksworkshop1111
+```
