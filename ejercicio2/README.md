@@ -117,3 +117,9 @@ helm install ratings bitnami/mongodb \
     --namespace workshopns \ 
     --set auth.username=<username>,auth.password=<password>,auth.database=ratingsdb
 ```
+### Creamos un secret que será el que utilice nuestra aplicación para conectar a mongodb (podrímos crear el secret con un yaml, pero vamos a hacerlo directamente por comando)
+```
+kubectl create secret generic mongosecret \
+    --namespace workshopns \
+    --from-literal=MONGOCONNECTION="mongodb://<username>:<password>@ratings-mongodb.workshopns:27017/ratingsdb"
+```
