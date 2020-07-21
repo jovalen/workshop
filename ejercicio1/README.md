@@ -13,7 +13,7 @@ az group create --name workshoprg --location eastus
 
 ## Create a container registry
 
-In this quickstart you create a *Basic* registry, which is a cost-optimized option for developers learning about Azure Container Registry. For details on available service tiers, see [Container registry service tiers][container-registry-skus].
+In this quickstart you create a *Basic* registry, which is a cost-optimized option for developers learning about Azure Container Registry. 
 
 Create an ACR instance using the [az acr create] command. The registry name must be unique within Azure, and contain 5-50 alphanumeric characters. In the following example, *myacrworkshop001* is used. Update this to a unique value.
 
@@ -63,4 +63,4 @@ The following example lists the repositories in your registry:
 
 ```azurecli
 az acr repository list --name <registry-name> --output table
-
+```
