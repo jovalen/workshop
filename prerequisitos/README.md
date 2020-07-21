@@ -12,12 +12,10 @@ az group create --name workshoprg --location eastus
 az vm create \
     --resource-group workshoprg \
     --name myvm001 \
-    --image 18.04-LTS \
+    --image UbuntuLTS \
     --admin-username azureuser \
     --admin-password Y0urpassw0rd \
-    --size Standard_D2_v3 \
-    --use-managed-disk \
-    --storage-sku Standard_LRS
+    --size Standard_D2_v3 
 ```
 ### Instalar docker ce
 ```
