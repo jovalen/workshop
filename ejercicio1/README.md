@@ -4,9 +4,8 @@ En este ejercicio vamos a crear un registro de im√°genes de contenedores a trav√
 
 ## Create a resource group
 
-Create a resource group with the [az group create][az-group-create] command. An Azure resource group is a logical container into which Azure resources are deployed and managed.
+Creamos un resource group con el comando  [az group create].
 
-The following example creates a resource group named *myResourceGroup* in the *eastus* location.
 
 ```azurecli
 az group create --name myResourceGroup --location eastus
@@ -16,7 +15,7 @@ az group create --name myResourceGroup --location eastus
 
 In this quickstart you create a *Basic* registry, which is a cost-optimized option for developers learning about Azure Container Registry. For details on available service tiers, see [Container registry service tiers][container-registry-skus].
 
-Create an ACR instance using the [az acr create][az-acr-create] command. The registry name must be unique within Azure, and contain 5-50 alphanumeric characters. In the following example, *myContainerRegistry007* is used. Update this to a unique value.
+Create an ACR instance using the [az acr create] command. The registry name must be unique within Azure, and contain 5-50 alphanumeric characters. In the following example, *myContainerRegistry007* is used. Update this to a unique value.
 
 ```azurecli
 az acr create --resource-group myResourceGroup \
@@ -57,8 +56,6 @@ az acr login --name <registry-name>
 ```
 
 The command returns a `Login Succeeded` message once completed.
-
-[!INCLUDE [container-registry-quickstart-docker-push](../../includes/container-registry-quickstart-docker-push.md)]
 
 ## List container images
 
