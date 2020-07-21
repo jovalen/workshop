@@ -68,3 +68,7 @@ az acr build \
     --registry myacrworkshop001 \
     --image ratings-api:v1 .
 ```
+### Comprobamos que está en nuestro repositorio la imagen creada:
+```
+az acr repository list  -n myacrworkshop001 -o table
+```
