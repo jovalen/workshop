@@ -1,9 +1,23 @@
 # INSTALAR PREREQUISITOS
 En este capítulo vamos a rear en Azure una VM con SO Ubuntu a la que instalaremos docker (versión community) y az CLI. Utilizaremos esta VM como nuestra dev machine.
 
-## Crear una VM en Azure
+## Crear una VM en Azure y configurar utilidades
 
+### Creamos un resource group
+```azcli
 az group create --name workshoprg --location eastus
+```
+### Creamos la VM
+```azcli
+az vm create \
+    --resource-group workshoprg \
+    --name myvm001 \
+    --image 18.04-LTS \
+    --admin-username azureuser \
+    --admin-password $AdminPassword \
+    --size Standard_D2_v3 \
+    --use-managed-disk \
+    --storage-sku Standard_LRS
 
 ### Instalar docker ce
 ```bash
