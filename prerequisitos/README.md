@@ -32,6 +32,13 @@ sudo systemctl status docke
 ```
 sudo docker image list
 ```
+
+#### Ahora damos permisos a los usuarios sin necesidad de usar sudo (no es una buena práctica, pero para este workshop nos va a resultar más sencillo)
+```
+sudo groupadd docker
+sudo gpasswd -a $USER docker
+newgrp docker
+```
 ### Instalamos AZ CLI
 ```
 curl -sL https://aka.ms/InstallAzureCLIDeb | sudo bash
