@@ -14,7 +14,7 @@ az vm create \
     --name myvm001 \
     --image 18.04-LTS \
     --admin-username azureuser \
-    --admin-password $AdminPassword \
+    --admin-password Y0urpassw0rd \
     --size Standard_D2_v3 \
     --use-managed-disk \
     --storage-sku Standard_LRS
