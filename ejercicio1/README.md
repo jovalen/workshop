@@ -18,7 +18,7 @@ In this quickstart you create a *Basic* registry, which is a cost-optimized opti
 Create an ACR instance using the [az acr create] command. The registry name must be unique within Azure, and contain 5-50 alphanumeric characters. In the following example, *myacrworkshop001* is used. Update this to a unique value.
 
 ```azurecli
-az acr create --resource-group myResourceGroup \
+az acr create --resource-group workshoprg \
   --name myacrworkshop001 --sku Basic
 ```
 
