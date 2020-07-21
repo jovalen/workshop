@@ -19,7 +19,7 @@ az network vnet create \
     --address-prefixes 10.0.0.0/8 \
     --subnet-name aks-subnet \
     --subnet-prefix 10.240.0.0/16
-    ```
+```
 ## Ahora nos guardamos en una variable el ID de la subnet para utilizarlo más adelante en la creación del cluster de AKS
 ```azurecli
 subnetid=`az network vnet subnet show -g aksworkshoprg --vnet-name aks-vnet --name aks-subnet --query id -o tsv`
