@@ -67,9 +67,19 @@ az acr repository list -n <registry-name> -o table
 ## Push an image to the registry
 First, we will download the official nginx docker image to our dev VM
 ```
-sudo docker pull 
+docker pull nginx
 ```
 Now, we are going to tag the local imave with the route to our ACR
 ```
 docker tag nginx myacrworkshop001.azurecr.io/samples/nginx
+```
+We login to our Azure container registry:
+```
+docker login myacrworkshop001.azurecr.io
+```
+And finally we can push the image to our ACR
+```
+docker push myacrworkshop001.azurecr.io/samples/nginx
+```
+
 docker 
