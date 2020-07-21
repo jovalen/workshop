@@ -64,3 +64,12 @@ The following example lists the repositories in your registry:
 ```azurecli
 az acr repository list -n <registry-name> -o table
 ```
+## Push an image to the registry
+First, we will download the official nginx docker image to our dev VM
+```
+sudo docker pull 
+```
+Now, we are going to tag the local imave with the route to our ACR
+```
+docker tag nginx myacrworkshop001.azurecr.io/samples/nginx
+docker 
