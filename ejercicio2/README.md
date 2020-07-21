@@ -33,7 +33,7 @@ az aks get-versions -l eastus -o table
 ```
 az aks create \
 --resource-group aksworkshoprg \
---name aks_workshop_1111 \
+--name aksworkshop1111 \
 --vm-set-type VirtualMachineScaleSets \
 --load-balancer-sku standard \
 --location eastus \
