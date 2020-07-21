@@ -7,6 +7,7 @@
 
 >
 
+- [Instalar pre-requisitos](prerequisitos/README.md)
 - [Ejercicio1](ejercicio1/README.md)
 - [Ejercicio2](#exe2)
 - [Ejercicio3](#exe3)
