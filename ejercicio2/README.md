@@ -1,4 +1,4 @@
-# Despliegue de K8S con AKS
+# 1.- Despliegue de K8S con AKS
 En este ejercicio vamos a crear un cluster de AKS
 
 ## Creamos un grupo de recursos
@@ -58,7 +58,7 @@ kubectl apply -f workshopns.yml
 >
 >
 >
-# Despliegue de una aplicación 
+# 2.- Despliegue de una aplicación 
 
 ## El siguiente paso que vamos realizar en este ejercicio del workshop, es el despliegue de una aplicación, utilizando el container registry creado en el ejercicio 1 para realizar el build de las imágenes docker
 
