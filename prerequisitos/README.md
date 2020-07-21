@@ -32,3 +32,7 @@ sudo systemctl status docke
 ```
 sudo docker image list
 ```
+### Instalamos AZ CLI
+```
+curl -sL https://aka.ms/InstallAzureCLIDeb | sudo bash
+```
