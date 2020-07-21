@@ -82,4 +82,3 @@ And finally we can push the image to our ACR
 docker push myacrworkshop001.azurecr.io/samples/nginx
 ```
 
-docker 
