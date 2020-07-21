@@ -24,3 +24,24 @@ az network vnet create \
 ```azurecli
 subnetid=`az network vnet subnet show -g aksworkshoprg --vnet-name aks-vnet --name aks-subnet --query id -o tsv`
 ```
+## Para ver las versiones disponibles:
+```azurecli
+az aks get-versions -l eastus -o table
+```
+
+## Ahora desplegamos el cluster
+```
+az aks create \
+--resource-group aksworkshoprg \
+--name aks_workshop_1111 \
+--vm-set-type VirtualMachineScaleSets \
+--load-balancer-sku standard \
+--location eastus \
+--kubernetes-version 1.18.4 \
+--network-plugin azure \
+--vnet-subnet-id $subnetid \
+--service-cidr 10.2.0.0/24 \
+--dns-service-ip 10.2.0.10 \
+--docker-bridge-address 172.17.0.1/16 \
+--generate-ssh-keys
+```
