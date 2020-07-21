@@ -2,12 +2,11 @@
 En este capítulo vamos a rear en Azure una VM con SO Ubuntu a la que instalaremos docker (versión community) y az CLI. Utilizaremos esta VM como nuestra dev machine.
 
 ## Crear una VM en Azure
-´´´
-sdsds
-´´´
+
+az group create --name workshoprg --location eastus
 
 ### Instalar docker ce
-´´´´bash
+```bash
 sudo apt update
 sudo apt install apt-transport-https ca-certificates curl software-properties-common
 curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
@@ -16,4 +15,4 @@ sudo apt update
 apt-cache policy docker-ce
 sudo apt install docker-ce
 sudo systemctl status docker
-´´´
+```
