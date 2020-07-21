@@ -61,7 +61,7 @@ kubectl apply -f workshopns.yml
 git clone https://github.com/MicrosoftDocs/mslearn-aks-workshop-ratings-api.git
 cd mslearn-aks-workshop-ratings-api
 ````
-### Ahora utilizando una task de ACR, vamos a realizar el build de la imagen
+### Ahora utilizando una task de ACR, vamos a realizar el build de la imagen que implementa el API de la aplicación
 ```
 az acr build \
     --resource-group workshoprg \
@@ -71,4 +71,18 @@ az acr build \
 ### Comprobamos que está en nuestro repositorio la imagen creada:
 ```
 az acr repository list  -n myacrworkshop001 -o table
+```
+
+### Ahora hacemos lomismo pero para el build de la imagen que implementa la parte front de la aplicación
+```
+cd ~
+git clone https://github.com/MicrosoftDocs/mslearn-aks-workshop-ratings-web.git
+cd mslearn-aks-workshop-ratings-web
+```
+Y hacemos el build, directametne en el ACR:
+```
+az acr build \
+    --resource-group workshoprg \
+    --registry myacrworkshop001 \
+    --image ratings-web:v1 .
 ```
