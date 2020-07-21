@@ -75,7 +75,7 @@ docker tag nginx myacrworkshop001.azurecr.io/samples/nginx
 ```
 We login to our Azure container registry:
 ```
-docker login myacrworkshop001.azurecr.io
+az acr login -n myacrworkshop001.azurecr.io
 ```
 And finally we can push the image to our ACR
 ```
