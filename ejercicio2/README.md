@@ -55,7 +55,10 @@ az aks get-credentials \
 ```
 kubectl apply -f workshopns.yml
 ```
+# Despliegue de una aplicación 
+
 ## El siguiente paso que vamos realizar en este ejercicio del workshop, es el despliegue de una aplicación, utilizando el container registry creado en el ejercicio 1 para realizar el build de las imágenes docker
+
 ### Clonamos el repo dónde está el Dockerfile y el código fuente
 ```
 git clone https://github.com/MicrosoftDocs/mslearn-aks-workshop-ratings-api.git
@@ -85,4 +88,11 @@ az acr build \
     --resource-group workshoprg \
     --registry myacrworkshop001 \
     --image ratings-web:v1 .
+```
+### Y por último configuramos el cluster para que se autentique con el ACR:
+```
+az aks update \
+    --name aksworkshop1111 \
+    --resource-group aksworkshoprg \
+    --attach-acr myacrworkshop001
 ```
