@@ -7,7 +7,7 @@
 
 >
 
-- [Ejercicio1](#exe1)
+- [Ejercicio1](ejercicio1/README.md)
 - [Ejercicio2](#exe2)
 - [Ejercicio3](#exe3)
 - [Ejercicio4](#exe4)
