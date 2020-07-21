@@ -52,7 +52,7 @@ Take note of `loginServer` in the output, which is the fully qualified registry 
 Before pushing and pulling container images, you must log in to the registry. To do so, use the [az acr login][az-acr-login] command.
 
 ```azurecli
-az acr login --name <registry-name>
+az acr login -n <registry-name>
 ```
 
 The command returns a `Login Succeeded` message once completed.
@@ -62,5 +62,5 @@ The command returns a `Login Succeeded` message once completed.
 The following example lists the repositories in your registry:
 
 ```azurecli
-az acr repository list --name <registry-name> --output table
+az acr repository list -n <registry-name> -o table
 ```
