@@ -10,6 +10,5 @@
 - [Instalar pre-requisitos](prerequisitos/README.md)
 - [Ejercicio1](ejercicio1/README.md)
 - [Ejercicio2](ejercicio2/README.md)
-- [Ejercicio3](#exe3)
+- [Ejercicio3](ejercicio3/README.md)
 - [Ejercicio4](#exe4)
-- [Ejercicio5](#exe5)
