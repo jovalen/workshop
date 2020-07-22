@@ -139,4 +139,9 @@ kubectl apply -n workshopns -f ratings-api-service.yml
 ```
 kubectl apply -n workshopns -f ratings-web-deployment.yml
 ```
+### Creamos el servicio para exponer el front 
+```
+kubectl apply -n workshopns -f rating-web-service.yml
+```
+
 
