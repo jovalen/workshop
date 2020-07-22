@@ -8,7 +8,7 @@
 >
 
 - [Instalar pre-requisitos](prerequisitos/README.md)
-- [Ejercicio1](ejercicio1/README.md)
-- [Ejercicio2](ejercicio2/README.md)
-- [Ejercicio3](ejercicio3/README.md)
-- [Ejercicio4](#exe4)
+- [Ejercicio1 - Azure Container Registry](ejercicio1/README.md)
+- [Ejercicio2 - Crear cluster de AKS y desplegar una App](ejercicio2/README.md)
+- [Ejercicio3 - Crear cluster de ARO ](ejercicio3/README.md)
+- [Ejercicio4 - Azure ARC enabled K8S](ejercicio4/README.md)
