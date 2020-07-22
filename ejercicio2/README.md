@@ -127,3 +127,7 @@ comprobamos que se ha creado correctamente:
 ```
 kubectl describe secret mongosecret --namespace workshopns
 ```
+### Creamos un deployment copiando el fichero ratings-api-deployment.yml de este repo
+```
+ kubectl apply --namespace workshopns -f ratings-api-deployment.yml
+ ```
