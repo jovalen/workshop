@@ -135,3 +135,8 @@ kubectl describe secret mongosecret --namespace workshopns
 ```
 kubectl apply -n workshopns -f ratings-api-service.yml
 ```
+### Desplegamos la parte front (usamos el fichero ratings-web-deployment.yml)
+```
+kubectl apply -n workshopns -f ratings-web-deployment.yml
+```
+
