@@ -1,5 +1,5 @@
 # INSTALAR PREREQUISITOS
-En este capítulo vamos a rear en Azure una VM con SO Ubuntu a la que instalaremos docker (versión community) y az CLI. Utilizaremos esta VM como nuestra dev machine.
+En este capítulo vamos a crear en Azure una VM con SO Ubuntu a la que instalaremos docker (versión community) y az CLI. Utilizaremos esta VM como nuestra dev machine.
 
 ## Crear una VM en Azure y configurar utilidades
 
