@@ -1,4 +1,4 @@
-# AZURE ARC: Alta de un cluster k8s
+# AZURE Arc: Alta de un cluster k8s
 En este ejercicio vamos a ver cómo podemos operacionalizar de forma centralizada, cualquier cluster de k8s, independientemente de dónde se esté ejecutando (On prem, AWS, ...)
 
 ## Instalación de prerequisitos:
